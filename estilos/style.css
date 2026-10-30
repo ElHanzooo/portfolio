@@ -8,6 +8,50 @@
   --fundo-card
 */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fundo-principal: #121412;
+  --texto: #F2F5F2;
+  --texto-inverso: #121412;
+  --destaque: #57FF57;
+  --destaque-inverso: #121412;
+  --fundo-card: #1C201C;
+}
+
 body {
-  background-color: gray;
+  background-color: var(--fundo-principal);
+  color: var(--texto);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+}
+
+header {
+  align-content: center;
+  background-color: var(--destaque);
+  color: var(--texto);
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+nav#menu ul {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+
+nav#menu a {
+  color: var(--texto-inverso);
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+nav#menu a:hover {
+  background-color: var(--destaque-inverso);
+  color: var(--destaque);
 }
