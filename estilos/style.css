@@ -15,12 +15,12 @@
 }
 
 :root {
-  --fundo-principal: #121412;
-  --texto: #F2F5F2;
-  --texto-inverso: #121412;
-  --destaque: #57FF57;
-  --destaque-inverso: #121412;
-  --fundo-card: #1C201C;
+  --fundo-principal: #151515;
+  --texto: #F0F0F0;
+  --texto-inverso: #151515;
+  --destaque: #55FF55;
+  --destaque-inverso: #151515;
+  --fundo-card: #F0F0F0;
 }
 
 body {
@@ -54,4 +54,54 @@ nav#menu a {
 nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
+}
+
+main {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 90vw 1fr;
+  margin-top: 20px;
+}
+
+section#ficha {
+  background-color: var(--fundo-card);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+section#ficha img.logo {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  object-fit: cover;
+  outline: 5px solid var(--destaque);
+  overflow: hidden;
+  width: 200px;
+}
+
+section#ficha h1 {
+  color: var(--destaque);
+  font-size: 1.5em;
+  margin: 15px 0px;
+  text-align: left;
+}
+
+div#social {
+  align-items: center;
+  display: flex;
+  font-size: 1.6em;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+div#social a {
+  color: var(--destaque);
+}
+
+div#social a:hover{
+  color: var(--destaque-inverso);
 }
